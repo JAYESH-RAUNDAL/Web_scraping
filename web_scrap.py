@@ -11,7 +11,7 @@ headers={}
 headers["Authorization"] = r.json()["resultObject"]["token"]                                                     #TO GET TOKEN
 #print(headers)
 #print(r.status_code)
-dict={'user_id': "90", 'start_date': "2020-01-01", 'end_date': "2020-02-29", 'limit': 10, 'offset': 0}
+dict={'user_id': "90", 'start_date': "2020-01-01", 'end_date': "2020-02-29", 'limit': 50, 'offset': 0}          #for first 50 rows
 #print(res.json()["resultObject"])
 responce=s.post(scrap_url,headers=headers,data=json.dumps(dict))                                                  #WE ARE IN SCRAPING LINK
 #print(responce.json())
