@@ -3,7 +3,7 @@ from mysql import connector
 conn = connector.connect(
     host="localhost",
     user="root",
-    passwd="9960551687",
+    passwd="",
     database="injectsolar")   #CONNECT TO MYSQL
 
 curr = conn.cursor()
